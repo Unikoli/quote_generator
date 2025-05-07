@@ -3,8 +3,9 @@
     --bg-dark: #121212;
     --text-light: #000;
     --text-dark: #fff;
-}
-body {
+  }
+  
+  body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -12,16 +13,19 @@ body {
     color: var(--text-light);
     transition: all 0.3s ease;
   }
+  
   body.dark-mode {
     background-color: var(--bg-dark);
     color: var(--text-dark);
   }
+  
   .container {
     padding: 2rem;
     max-width: 600px;
     margin: auto;
     text-align: center;
   }
+  
   .controls {
     display: flex;
     justify-content: space-between;
@@ -29,25 +33,30 @@ body {
     flex-wrap: wrap;
     margin-bottom: 1rem;
   }
+  
   .buttons button {
     margin: 0.5rem;
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     cursor: pointer;
   }
+  
   #quoteBox {
     margin: 2rem 0;
     font-size: 1.5rem;
   }
+  
   .theme-switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 24px;
   }
+  
   .theme-switch input {
     display: none;
   }
+  
   .slider {
     position: absolute;
     cursor: pointer;
@@ -56,6 +65,7 @@ body {
     border-radius: 24px;
     transition: .4s;
   }
+  
   .slider:before {
     content: "";
     position: absolute;
@@ -67,15 +77,19 @@ body {
     transition: .4s;
     border-radius: 50%;
   }
+  
   input:checked + .slider {
     background-color: #66bb6a;
   }
+  
   input:checked + .slider:before {
     transform: translateX(26px);
   }
+  
   @media (max-width: 600px) {
     .controls {
       flex-direction: column;
       align-items: stretch;
     }
-}
+  }
+  

@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quote Generator</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-</html>
-
 <body>
-    <div class="container">
-        <h1>Quote generator</h1>
-        <div class="controls">
+  <div class="container">
+    <h1>Quote Generator</h1>
+    
+    <div class="controls">
+      <select id="categorySelector">
+        <option value="all">All</option>
+        <option value="science">Science</option>
+        <option value="life">Life</option>
+      </select>
 
-            <select id="categorySelector">
-                <!-- category selector -->
-                <option value="all">All</option>
-                <option value="science">Science</option>
-                <option value="life">Life</option>
-            </select>
-            <!-- Font size controller -->
-            <div class="font-size-controls">
-                <button id="increaseFont">A+</button>
-                <button id="decreaseFont">A-</button>
-            </div>
-            <!-- theme switch -->
-            <label class="theme-switch">
-                <input type="checkbox" id="modeToggle" />
-                <span class="slider"></span>
-            </label>
-        </div>
-        <!-- quote box -->
-        <div id="quoteBox">
-            <p id="quoteText"></p>
-            <p id="quoteAuthor"></p>
-        </div>
+      <div class="font-size-controls">
+        <button id="increaseFont">A+</button>
+        <button id="decreaseFont">A-</button>
+      </div>
 
-        <!-- buttons -->
-        <div class="buttons">
-            <button id="prevBtn">Previous</button>
-            <button id="randomBtn">Random</button>
-            <button id="nextBtn">Next</button>
-        </div>
+      <label class="theme-switch">
+        <input type="checkbox" id="modeToggle" />
+        <span class="slider"></span>
+      </label>
     </div>
 
+    <div id="quoteBox">
+      <p id="quoteText"></p>
+      <p id="quoteAuthor"></p>
     </div>
-    <!-- scripts -->
-    <script src="data/quotes.js"></script>
-    <script src="js/script.js"></script>
+
+    <div class="buttons">
+      <button id="prevBtn">Previous</button>
+      <button id="randomBtn">Random</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <script src="data/quotes.js"></script>
+  <script src="js/script.js"></script>
 </body>
+</html>
